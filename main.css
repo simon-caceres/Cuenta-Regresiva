@@ -1,0 +1,56 @@
+/* ==================
+ *  BASE
+ * ================== */
+ body {
+    font-family: 'Sarpanch', sans-serif;
+    color: hsl(0, 0%, 7%);
+    background: #f2f1ed;
+    background: radial-gradient(hsl(204, 86%, 93%), hsl(204, 86%, 63%));
+  }
+  .outer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+  /* ==================
+   *  APP
+   * ================== */
+  .countdown {
+    margin: 5px 0 30px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 18px;
+    color: hsl(204, 86%, 43%);
+  }
+  h2 {
+    font-size: 120px;
+    width: 390px;
+    line-height: 1;
+    text-align: center;
+  }
+  h3 {
+    font-size: 28px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  h3 span {
+    width: 70px;
+    border-bottom: 2px solid hsl(348, 100%, 71%);
+    margin-left: 15px;
+    text-align: center;
+  }
+  .time {
+    float: center;
+    list-style-type: none;
+    text-align: left;
+  }
+  .columns {
+   
+    margin-left: 0;
+    margin-right: 0;
+  }
+  

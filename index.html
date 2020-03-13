@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Cuenta Regresiva</title>
+</head>
+<body>
+    <section id="app">
+       <h1>{{mensaje}}</h1>
+       <div class = " outer-container">
+           <div class = "inner-container">
+                <div class = "countdown">
+                    <h2>{{timeLeft}}</h2>
+                    <h3>countdown ends at <span>{{endTime}}</span></h3>
+                </div>
+                <ul class="columns is-mobile is-centered">
+                    <li v-for="(time, index) in times" :key="index" class="column time btn ">
+                      <button v-on:click.prevent="setTime(time.sec)" :class="[
+                            'button',
+                            'is-link',
+                            'btn btn-danger',
+                            {'is-active': time.sec === selectedTime && endTime !== 0 }
+                          ]">
+                          {{time.display}}
+                    </button>
+                    </li>
+                  </ul>
+           </div>
+       </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
