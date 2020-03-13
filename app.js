@@ -9,16 +9,20 @@ const app = new Vue({
             endTime: '0',
             times: [
                 {
-                     sec: 3,
-                     display: '3 segundos'
+                     sec: 5,
+                     display: '5 seg'
+                },
+                {
+                    sec: 300,
+                    display: '5 min'
                 },
                 {
                     sec: 600,
-                    display: '10 minutos'
+                    display: '10 min'
                 },
                 {
                     sec: 1800,
-                    display: '30 minutos'
+                    display: '30 min'
                 }
             ]
         }
