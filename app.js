@@ -10,15 +10,15 @@ const app = new Vue({
             times: [
                 {
                      sec: 3,
-                     display: '3s'
+                     display: '3 segundos'
                 },
                 {
                     sec: 600,
-                    display: '10m'
+                    display: '10 minutos'
                 },
                 {
                     sec: 1800,
-                    display: '30m'
+                    display: '30 minutos'
                 }
             ]
         }
