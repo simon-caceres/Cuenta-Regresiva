@@ -9,31 +9,16 @@
 </head>
 <body>
     <section id="app">
+        <br>
        <h1>{{mensaje}}</h1>
-       <div class = " outer-container">
-           <div class = "inner-container">
-                <div class = "countdown">
-                    <h2>{{timeLeft}}</h2>
-                    <h3>el contador termina a las: <span>{{endTime}}</span></h3>
-                </div>
-                <ul class="columns is-mobile is-centered">
-                    <li v-for="(time, index) in times" :key="index" class="column time btn ">
-                      <button v-on:click.prevent="setTime(time.sec)" :class="[
-                            'button',
-                            'is-link',
-                            'btn btn-danger',
-                            {'is-active': time.sec === selectedTime && endTime !== 0 }
-                          ]">
-                          {{time.display}}
-                    </button>
-                    </li>
-                  </ul>
-           </div>
-       </div>
+       <boton-counter></boton-counter>
+      
+      
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="component.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
