@@ -28,6 +28,18 @@ data() {
         endTime: '0',
         times: [
             {
+                sec: 1800,
+                display: '30 min'
+            },
+            {
+                sec: 600,
+                display: '10 min'
+            },
+            {
+                sec: 300,
+                display: '5 min'
+            },
+            {
                 sec: 1,
                 display: '1 seg'
             },
@@ -39,18 +51,7 @@ data() {
                 sec: 10,
                 display: '10 seg'
             },
-            {
-                sec: 300,
-                display: '5 min'
-            },
-            {
-                sec: 600,
-                display: '10 min'
-            },
-            {
-                sec: 1800,
-                display: '30 min'
-            },
+            
            
         ]
     }
